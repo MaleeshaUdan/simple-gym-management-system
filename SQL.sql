@@ -75,6 +75,25 @@ DROP TRIGGER IF EXISTS calculate_bmi;
 DROP TRIGGER IF EXISTS update_bmi;
 
 
+/*machine*/
+create table machine(
+    machine_id varchar(5) primary key,
+    machine_name varchar(70),
+    count int(3)
+);
+
+
+INSERT INTO machine (machine_id, machine_name, count) VALUES
+('M01', 'Lat pulldown machine', 1),
+('M02', 'Leg Extension Machine', 1),
+('M03', 'Chest Fly Machine', 1),
+('M04', 'Leg Press Machine', 1),
+('M05', 'Treadmill', 1),
+('M06', 'Stationary bike', 1),
+('M07', 'Chest Dips Machine', 1);
+
+
+
 
 
 

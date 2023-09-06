@@ -92,7 +92,9 @@ if ($result->num_rows > 0) {
 
                     if (isset($_SESSION["username"])) {
                         $username = $_SESSION["username"];
-                        echo "Welcome $username";
+                        echo "Welcome<br>";
+                        echo $username;
+
                     } else {
                         echo "Welcome!";
                     }
