@@ -149,14 +149,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     if (isset($_SESSION["username"])) {
                         $username = $_SESSION["username"];
-                        echo "Welcome $username";
+                        $username = $_SESSION["username"];
+                        echo "Welcome<br>";
+                        echo $username;
                     } else {
                         echo "Welcome!";
                     }
               ?>  
-              </div>
-              <div class="unlimited-access-img">
-                <img src="../assets/images/backgrounds/rocket.png" alt="" class="img-fluid">
               </div>
             </div>
             <a href="logout.php" class="btn btn-danger">Logout</a>
